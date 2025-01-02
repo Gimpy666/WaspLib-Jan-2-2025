@@ -112,6 +112,9 @@ type
     FEROX_ENCLAVE:              TBox;
     FOUNTAIN_OF_RUNE:           TBox;
     SKOTIZO:                    TBox;
+    LITHKREN_VAULT:             TBox;
+    KALPHITE_QUEEN_LAIR:        TBox;
+    FORTHOS_DUNGEON:       TBox;
   end;
 
 var
@@ -225,6 +228,9 @@ begin
   RSRegions.FEROX_ENCLAVE              := [7803, 1782, 8097, 2062];
   RSRegions.FOUNTAIN_OF_RUNE           := [8364, 624, 9062, 1575];
   RSRegions.SKOTIZO                    := [655, 2730, 957, 3022];
+  RSRegions.LITHKREN_VAULT             := [9581, 308, 9970, 702];
+  RSRegions.KALPHITE_QUEEN_LAIR        := [7940, 5495, 8239, 5802];
+  RSRegions.FORTHOS_DUNGEON             := [3020, 1812, 3422, 2328];
 
   RSNamedRegionsArray := [
     ['Abyss', RSRegions.ABYSS],
@@ -333,7 +339,10 @@ begin
     ['Evil Chicken Lair', RSRegions.EVIL_CHICKEN_LAIR],
     ['Ferox Enclave', RSRegions.FEROX_ENCLAVE],
     ['Fountain of Rune', RSRegions.FOUNTAIN_OF_RUNE],
-    ['Skotizo', RSRegions.SKOTIZO]
+    ['Skotizo', RSRegions.SKOTIZO],
+    ['Lithkren Vault', RSRegions.LITHKREN_VAULT],
+    ['Kalphite Queen Lair', RSRegions.KALPHITE_QUEEN_LAIR],
+    ['Forthos Dungeon', RSRegions.FORTHOS_DUNGEON]
   ];
 
   RSBankRegions.Setup();
