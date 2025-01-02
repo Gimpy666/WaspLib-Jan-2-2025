@@ -64,7 +64,13 @@ type
     Turoth,
     Bloodveld,
     Banshee,
-    TwistedBanshee, BlackKnight, Basilisk, BasiliskKnight: TRSMonster;
+    TwistedBanshee,
+    BlackKnight,
+    Basilisk,
+    BasiliskKnight,
+    RuneDragon,
+    KalphiteQueen,
+    Sarachnis: TRSMonster;
   end;
 
 procedure TRSMonsters.Setup();
@@ -582,6 +588,28 @@ begin
     Setup('Basilisk Knight');
     Finder.Colors += CTS2(474200, 7, 0.24, 2.37);
     Finder.Colors += CTS2(3750467, 13, 0.14, 0.50);
+  end;
+
+  with Self.RuneDragon do
+  begin
+    Setup([30, 90, 80], 8, [[9855, 555]]);
+    Setup('Rune dragon');
+    Finder.Colors += CTS2(9338741, 21, 0.19, 0.14);
+  end;
+
+  with Self.KalphiteQueen do
+  begin
+    Setup([30, 90, 80], 8, [[8035, 5665]]);
+    Setup('Kalphite Queen');
+    Finder.Colors += CTS2(3302045, 21, 0.19, 0.14);
+    Finder.Colors += CTS2(3764659, 21, 0.19, 0.14);
+  end;
+
+  with Self.Sarachnis do
+  begin
+    Setup([30, 90, 80], 8, [[3290, 2205]]);
+    Setup('Sarachnis');
+    Finder.Colors += CTS2(5725607, 1, 0.01, 0.01);
   end;
 end;
 
